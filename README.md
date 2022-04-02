@@ -40,4 +40,4 @@ mysqli_connect("localhost", "u667897109_Ade", "T#st1125", "u667897109_Data");
 
 #### Dependencies
 
-You need an internet browser that supports javascript to run this web application. 
+You need an internet browser that supports JavaScript to run this web application. 
