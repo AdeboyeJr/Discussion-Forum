@@ -26,7 +26,7 @@ The user is notified that the post has sucessfully been added.
 
 Users can naviate to the topic list to view all topics and posts that have been published on the site. A MySQL query selects all the topics that have been published and lists them in a table. The table contains data for the topic, the number of posts on that topic and the date the topic was created.
 
-When users click on the topic title, they are directed to the 'showtopic.php' page where they can view data on all the posts that were published on said topic. Data is presented in a table and users can reply to each post. Selecting `REPLY TO POST` directs them to the `replytopost.php` page where they can add their own opinions to the topic.
+When users click on the topic title, they are directed to the `showtopic.php` page where they can view data on all the posts that were published on said topic. Data is presented in a table and users can reply to each post. Selecting `REPLY TO POST` directs them to the `replytopost.php` page where they can add their own opinions to the topic.
 
 #### Host
 
