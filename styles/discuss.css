@@ -1,0 +1,121 @@
+html {
+    background: rgba(65, 188, 147, 0.878);
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background: rgb(255, 255, 255);
+
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    padding: 4em;
+    
+}
+
+#myTable {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#banner {
+    text-align: center;
+    font-size: 3em;
+    
+    color: white;
+    background-color: rgb(127, 255, 212);
+    padding: 20px;
+    margin-bottom: 1em;
+}
+
+a {
+    color: rgb(123, 163, 150);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(4, 107, 73, 1);
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(127, 212, 184);
+    text-decoration: none;
+}
+
+#content a{
+   text-align: center;
+
+}
+
+#mytable th:nth-child(1) {
+    border-right: 1px solid rgba(4, 107, 73, 1);
+}
+
+th {
+    border: 1px solid rgba(127, 255, 212, 0.25);
+    font-weight: bold;
+    padding: 2em;
+    text-align: center;
+    background: rgba(127, 255, 212, 0.25);
+}
+
+th a {
+    color: rgb(123, 163, 150);
+    text-decoration: none;
+}
+
+th a:hover {
+    color: rgba(4, 107, 73, 1);
+    text-decoration: none;
+}
+
+th a:active {
+    color: rgb(127, 212, 184);
+    text-decoration: none;
+}
+
+td {
+    border: 1px solid rgb(127, 255, 212);
+    padding: 6px;
+}
+
+.num_posts_col {text-align: center;}
+
+#nav {
+    margin-top: 3em;
+    text-align: center;
+}
+
+#home, #add-topic {
+    font-size: 1em;
+    border: 1px solid rgba(127, 255, 212, 0.25);
+    background: rgba(127, 255, 212, 0.25);
+    color:rgb(123, 163, 150);
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 .5em rgba(4, 107, 73, 1);
+}
+
+#home:active, #add-topic:active {
+    box-shadow: 0 .2em rgb(3, 56, 39);
+    transform: translateY(4px);
+}
+
+form {
+    margin-left: 2em;
+}
+
+form p {
+    color: rgb(123, 163, 150);
+    margin-top: 1.5em;
+}
+
+form textarea {
+    width: 80em;
+}

@@ -69,24 +69,9 @@ if (mysqli_num_rows($get_topics_res) < 1) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topics in My Forum</title>
-    <style type="text/css">
-        table {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th {
-            border: 1px solid black;
-            padding: 6px;
-            font-weight: bold;
-            background: #ccc;
-        }
-        td {
-            border: 1px solid black;
-            padding: 6px;
-        }
-        .num_posts_col {text-align: center;}
-    </style>
+    <title>Topics in My Forum</title>  
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/discuss.css">
     <script type="text/javascript">
         function sortTable(table, col, reverse) {
             var tb = table.tBodies[0];
@@ -106,10 +91,19 @@ if (mysqli_num_rows($get_topics_res) < 1) {
 
 </head>
 <body>
-    <h1>Topics in My Forum</h1>
-    <?php echo $display_block ?>
-    <p>Would you like to 
-    <a href="addtopic.html">add a topic?</a></p>
+
+    <main>
+        <h1 id="banner">Topics in My Forum</h1>
+        <section id="content">
+            <?php echo $display_block ?>
+            <div id="nav">
+                <p>Would you like to 
+                <a href="addtopic.html">add a topic?</a></p>
+                <button id="home"><a href="/">Home</a></button>
+            </div>
+        </section>      
+    </main>
+
 
 </body>
 </html>
