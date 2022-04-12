@@ -70,6 +70,7 @@ if (mysqli_num_rows($get_topics_res) < 1) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topics in My Forum</title>  
+    <link rel="icon" href="images/devtools.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/discuss.css">
     <script type="text/javascript">
@@ -99,7 +100,7 @@ if (mysqli_num_rows($get_topics_res) < 1) {
             <div id="nav">
                 <p>Would you like to 
                 <a href="addtopic.html">add a topic?</a></p>
-                <button id="home"><a href="/">Home</a></button>
+                <a href="/"><button id="home">Home</button></a>
             </div>
         </section>      
     </main>

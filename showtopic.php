@@ -35,8 +35,8 @@ if (mysqli_num_rows($verify_topic_res) < 1) {
 
     // create the display string
     $display_block = <<<END_OF_TEXT
-    <p>Showing posts for the <strong>$topic_title</strong> topic:</p>
-    <table>
+    <h2>Showing posts for the <strong>$topic_title</strong> topic:</h2>
+    <table id="posts">
     <tr>
     <th>AUTHOR</th>
     <th>POST</th>
@@ -79,29 +79,14 @@ if (mysqli_num_rows($verify_topic_res) < 1) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts in Topic</title>
-    <style type="text/css">
-        table {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th {
-            border: 1px solid black;
-            padding: 6px;
-            font-weight: bold;
-            background: #ccc;
-        }
-        td {
-            border: 1px solid black;
-            padding: 6px;
-            vertical-align: top;
-        }
-        .num_posts_col { text-align: center;}
-    </style>
+    <link rel="icon" href="images/devtools.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/discuss.css">
 </head>
 <body>
-    <h1>Posts in Topic</h1>
+    <h1 id="banner">Posts in Topic</h1>
     <?php echo $display_block; ?>
-    <h2><a href="topiclist.php">Back to Topic List</a></h2>
+    <p id="nav"><a href="topiclist.php">Back to Topic List</a></p>
     
 </body>
 </html>

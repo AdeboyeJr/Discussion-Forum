@@ -37,9 +37,12 @@ if (mysqli_num_rows($verify_res) < 1) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post Your Reply in <?php echo $topic_title; ?></title>
+    <link rel="icon" href="images/devtools.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/discuss.css">
 </head>
 <body>
-    <h1>Post Your reply in <?php echo $topic_title; ?></h1>
+    <h1 id="banner">Post Your Reply in <strong><?php echo $topic_title; ?></strong></h1>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <p><label for="post_owner">Your Email Address:</label><br>
     <input type="email" id="post_owner" name="post_owner" size="40" maxlength="150" required="required"></p>
@@ -48,9 +51,9 @@ if (mysqli_num_rows($verify_res) < 1) {
     <textarea name="post_text" id="post_text" cols="40" rows="8" required="required"></textarea></p>
 
     <input type="hidden" name="topic_id" value="<?php echo $topic_id; ?>">
-    <button type="submit" name="submit" value="submit">Add Post</button>
+    <button id="add-post" type="submit" name="submit" value="submit">Add Post</button>
     </form>
-    <h2><a href="showtopic.php?topic_id=<?php echo $topic_id?>">Back to Posts in Topic</a></h2>
+    <p id="nav-left"><a href="showtopic.php?topic_id=<?php echo $topic_id?>">Back to Posts in Topic</a></p>
     
 </body>
 </html>

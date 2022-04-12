@@ -17,7 +17,7 @@ table {
     
 }
 
-#myTable {
+#myTable, #posts {
     margin: 0 auto;
     width: 60%;
 }
@@ -30,6 +30,16 @@ table {
     background-color: rgb(127, 255, 212);
     padding: 20px;
     margin-bottom: 1em;
+}
+
+h2 {
+    margin-top: -2em;
+    margin-bottom: 1em;
+    padding: 1em;
+    color: rgb(123, 163, 150);
+    background: rgba(127, 255, 212, 0.25);
+    text-align: center;
+    font-size: 2em;
 }
 
 a {
@@ -61,11 +71,11 @@ th {
     font-weight: bold;
     padding: 2em;
     text-align: center;
+    color: rgb(123, 163, 150);
     background: rgba(127, 255, 212, 0.25);
 }
 
 th a {
-    color: rgb(123, 163, 150);
     text-decoration: none;
 }
 
@@ -88,10 +98,16 @@ td {
 
 #nav {
     margin-top: 3em;
+    margin-bottom: 3em;
     text-align: center;
 }
 
-#home, #add-topic {
+#nav-left {
+    margin-left: 2em;
+    margin-top: 3em;
+}
+
+#home, #add-topic, #add-post {
     font-size: 1em;
     border: 1px solid rgba(127, 255, 212, 0.25);
     background: rgba(127, 255, 212, 0.25);
@@ -102,7 +118,13 @@ td {
     box-shadow: 0 .5em rgba(4, 107, 73, 1);
 }
 
-#home:active, #add-topic:active {
+#home:hover, #add-topic:hover, #add-post:hover {
+    color: rgba(4, 107, 73, 1);
+    background: rgba(57, 206, 157, 0.543);
+    box-shadow: 0 .5em rgb(3, 77, 52);
+}
+
+#home:active, #add-topic:active, #add-post:active {
     box-shadow: 0 .2em rgb(3, 56, 39);
     transform: translateY(4px);
 }
@@ -117,5 +139,19 @@ form p {
 }
 
 form textarea {
-    width: 80em;
+    width: 70%;
+}
+
+form input {
+    width: 40%;
+}
+
+h2 strong {
+    color:rgb(3, 56, 39);
+    font-weight: bold;
+}
+
+h1 strong {
+    color:rgb(87, 170, 143);
+    font-weight: bold;
 }
